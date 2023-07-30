@@ -1,0 +1,70 @@
+<div class="container">
+    <div class="container row mt-5">
+        <div class="col-lg-3 col-md-6 col-sm-12 text-center">
+            <a (click)="filterProducts('')" style="text-decoration: none;">
+
+                <img class="img2"
+                    src="https://i.postimg.cc/rwrH9QBy/The-Importance-of-Courier-Services-for-Online-Shopping-of-Essential-Items-1.jpg"
+                    alt="">
+                <h4 class="mt-3 text-danger">All Products</h4>
+
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 text-center">
+            <a (click)="filterProducts(1)" style="text-decoration: none;">
+
+                <img class="img2" src="https://i.postimg.cc/hvFVDt5B/71-Pdmi-Gmyh-L-AC-SL1500-1.jpg" alt="">
+                <h4 class="mt-3 text-danger">Shirts</h4>
+
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 text-center">
+            <a (click)="filterProducts(2)" style="text-decoration: none;">
+
+                <img class="img2" src="https://i.postimg.cc/4d2pr1zm/Vyp4t2-Vm-1.jpg" alt="">
+                <h4 class="mt-3 text-danger">Smart Phones</h4>
+
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 text-center">
+            <a (click)="filterProducts(3)" style="text-decoration: none;">
+
+                <img class="img2" src="https://i.postimg.cc/mrGjwVw4/tw0hxw406t-4-1.jpg" alt="">
+                <h4 class="mt-3 text-danger">Watches</h4>
+
+            </a>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Section-->
+<section class="py-5">
+    <div class="container px-4 px-lg-5 mt-5 ">
+        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+            <div *ngFor="let i of filterProductsData | search:searchData:'productName'" class="col mb-5">
+                <div class="card h-100 ">
+                    <!-- Product image-->
+                    <img class="card-img-top p-4 img" src={{i.productImage}} alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder text-danger">{{i.productName}}</h5>
+                            <h6 class="fw-">{{i.description}}</h6>
+                            <!-- Product price-->
+                            <strong class="text-warning">{{i.price}}</strong>
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center"><a class="btn btn-outline-success mt-auto"
+                                href="product/view/{{i.id}}">View</a></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>

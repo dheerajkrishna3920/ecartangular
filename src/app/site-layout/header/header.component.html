@@ -1,0 +1,48 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container px-4 px-lg-5">
+        <i class="fa-solid fa-cart-shopping fa-3x fa-beat text-danger"></i>
+        <a class="navbar-brand name text-danger ms-3" href=""><strong>Click-Pick</strong></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
+                class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="product/add">Add new
+                        product</a></li>
+
+                <form action="" class=" ">
+                    <input (keyup)="search($event)" [(ngModel)]="searchData" class="search" type="text"
+                        placeholder="Search Product" name="s1" id="sid">
+                    <button class="btn btn-success ms-1" type="button">Search
+                    </button>
+
+                </form>
+            </ul>
+
+        </div>
+    </div>
+</nav>
+<!-- Header-->
+<header class="bg-warning py-2">
+    <div class="container px-4 px-lg-5 my-5">
+
+        <div class="row container">
+
+            <div class=" col-lg-6 col-md-6 col-sm-6  p-5 text-white text-center container  ">
+
+
+                <h1 class="display-4 fw-bolder text-danger mt-5">Freeze your time</h1>
+                <p class="lead fw-bolder  mb-0 text-danger">shop in the future...</p>
+
+
+            </div>
+
+            <div class=" col-lg-6 col-md-6 col-sm-6 headerimage ">
+
+
+            </div>
+
+        </div>
+
+    </div>
+</header>

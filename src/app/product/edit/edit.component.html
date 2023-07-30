@@ -1,0 +1,34 @@
+<div class="p-5 container text-center w-50  mt-5 mb-5">
+
+
+
+    <div class="text-center">
+        <h1 class="text-danger"><strong>Edit Product Details</strong></h1>
+    </div>
+
+
+
+    <form (ngSubmit)="updateData()" action="" class="container p-5 border bg-dark mt-5 form" id="d">
+
+        <input [(ngModel)]="pdata.productName" type="text" class="mt-5 form-control p-2 border" name="pn2" id="pid2" placeholder="Productname"><br>
+        <input [(ngModel)]="pdata.categoryId" type="text" class="mt-5 form-control p-2 border" name="pn3" id="pid3" placeholder="categoryid"><br>
+        <input [(ngModel)]="pdata.description" type="text" class="mt-5 form-control p-2 border" name="pn4" id="pid4" placeholder="Description"><br>
+        <input [(ngModel)]="pdata.price" type="text" class="mt-5 form-control p-2 border" name="pn5" id="pid5" placeholder="Price"><br>
+        <input [(ngModel)]="pdata.availabaility" type="text" class="mt-5 form-control p-2 border" name="pn6" id="pid6" placeholder="Availability"><br>
+        <input [(ngModel)]="pdata.productImage" type="text" class="mt-5 form-control p-2 border" name="pn7" id="pid7" placeholder="Productimage"><br>
+        <input [(ngModel)]="pdata.rating" type="text" class="mt-5 form-control p-2 border" name="pn8" id="pid8" placeholder="Rating"><br>
+        <input [(ngModel)]="pdata.review" type="text" class="mt-5 form-control p-2 border" name="pn9" id="pid9" placeholder="Review"><br>
+        <input [(ngModel)]="pdata.vendorName" type="text" class="mt-5 form-control p-2 border" name="pn10" id="pid10" placeholder="Vendorname"><br>
+        <input [(ngModel)]="pdata.warranty" type="text" class="mt-5 form-control p-2 border" name="pn11" id="pid11" placeholder="Warranty"><br>
+        <button class="btn btn-success ms-2" type="submit">Edit</button>
+
+
+
+
+    </form>
+
+
+
+
+
+</div>

@@ -1,0 +1,31 @@
+<section class="py-5">
+    <div class="container px-4 px-lg-5 my-5">
+        <div class="row gx-4 gx-lg-5 align-items-center">
+            <div class="col-md-6"><img  height="600px" class="card-img-top mb-5 mb-md-0" src={{pdata.productImage}} alt="..." /></div>
+            <div class="col-md-6">
+                <div class="small mb-1">{{pdata.productName}}</div>
+                <h3 class="display fw-bolder">{{pdata.productName}}</h3>
+                <div class="fs-5 mb-5">
+                    <span class="text-success">Price: {{pdata.price}}</span>
+                    <span></span>
+                </div>
+                <p class="lead">{{pdata.description}}</p>
+                <p class="lead">Rating: <strong class="text-success">{{pdata.rating}}</strong></p>
+                <p class="lead">Review: <strong>{{pdata.review}}</strong></p>
+                <p class="lead">Vendor: <strong>{{pdata.vendorName}}</strong></p>
+
+                <div class="d-flex">
+                    <button class="btn btn-warning flex-shrink-0 px-5 mt-4" type="button">
+                        
+                        <a class="text-dark" style="text-decoration: none;" href="product/edit/{{id}}">Edit</a>
+                    </button>
+                    
+                    <button class="btn btn-danger px-5 mt-4 ms-1" type="button">
+                       
+                        <a class="text-dark" style="text-decoration: none;" href="product/delete/{{id}}">Delete</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

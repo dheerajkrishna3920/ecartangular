@@ -1,0 +1,34 @@
+.name {
+    font-size: 40px;
+}
+
+.headerimage {
+    background-image: url(src\assets\images\shopping.avif);
+     width:50%;
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: contain;
+     height: 350px;
+     transition: ease-in-out 1s;
+
+}
+.headerimage:hover{
+    transform: scale(1.1);
+}
+
+.header{
+    background-color: goldenrod;
+}
+.search{
+    
+    height: 35px;
+}
+@media(min-width:250px) and (max-width:300px){
+    .headerimage {
+         background: none;
+        
+    
+    }
+}
+
+
